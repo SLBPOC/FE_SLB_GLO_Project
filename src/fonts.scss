@@ -1,0 +1,121 @@
+/* SLB Sans Light*/
+@font-face {
+  font-family: 'SLB Sans Light';
+  src: url('./assets/fonts/SLBSans-Light.eot');
+  src: url('./assets/fonts/SLBSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-Light.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-Light.woff') format('woff'),
+      url('./assets/fonts/SLBSans-Light.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-Light.svg#SLBSans-Light') format('svg');
+      
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* SLB Sans Light Italic*/
+@font-face {
+  font-family: 'SLB Sans Light Italic';
+  src: url('./assets/fonts/SLBSans-LightItalic.eot');
+  src: url('./assets/fonts/SLBSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-LightItalic.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-LightItalic.woff') format('woff'),
+      url('./assets/fonts/SLBSans-LightItalic.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-LightItalic.svg#SLBSans-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: normal;
+}
+
+/* SLB Sans Bold*/
+@font-face {
+  font-family: 'SLB Sans Bold';
+  src: url('./assets/fonts/SLBSans-Bold.eot');
+  src: url('./assets/fonts/SLBSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-Bold.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-Bold.woff') format('woff'),
+      url('./assets/fonts/SLBSans-Bold.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-Bold.svg#SLBSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: normal;
+}
+
+@font-face {
+  font-family: 'SLB Sans Book';
+  src: url('./assets/fonts/SLBSans-Book.eot');
+  src: url('./assets/fonts/SLBSans-Book.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-Book.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-Book.woff') format('woff'),
+      url('./assets/fonts/SLBSans-Book.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-Book.svg#SLBSans-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SLB Sans Bold Italic';
+  src: url('./assets/fonts/SLBSans-BoldItalic.eot');
+  src: url('./assets/fonts/SLBSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-BoldItalic.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-BoldItalic.woff') format('woff'),
+      url('./assets/fonts/SLBSans-BoldItalic.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-BoldItalic.svg#SLBSans-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SLB Sans Book Italic';
+  src: url('./assets/fonts/SLBSans-BookItalic.eot');
+  src: url('./assets/fonts/SLBSans-BookItalic.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-BookItalic.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-BookItalic.woff') format('woff'),
+      url('./assets/fonts/SLBSans-BookItalic.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-BookItalic.svg#SLBSans-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'SLB Sans Medium';
+  src: url('./assets/fonts/SLBSans-Medium.eot');
+  src: url('./assets/fonts/SLBSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-Medium.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-Medium.woff') format('woff'),
+      url('./assets/fonts/SLBSans-Medium.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-Medium.svg#SLBSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SLB Sans Medium Italic';
+  src: url('./assets/fonts/SLBSans-MediumItalic.eot');
+  src: url('./assets/fonts/SLBSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-MediumItalic.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-MediumItalic.woff') format('woff'),
+      url('./assets/fonts/SLBSans-MediumItalic.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-MediumItalic.svg#SLBSans-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'SLB Sans Regular';
+  src: url('./assets/fonts/SLBSans-Regular.eot');
+  src: url('./assets/fonts/SLBSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/SLBSans-Regular.woff2') format('woff2'),
+      url('./assets/fonts/SLBSans-Regular.woff') format('woff'),
+      url('./assets/fonts/SLBSans-Regular.ttf') format('truetype'),
+      url('./assets/fonts/SLBSans-Regular.svg#SLBSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+

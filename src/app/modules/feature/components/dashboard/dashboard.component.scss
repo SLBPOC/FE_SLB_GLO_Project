@@ -1,0 +1,33 @@
+.container-fluid {
+    background-color: #ededed;
+
+    .well-list, .well-performance, 
+    .yesterday-cycle-count, 
+    .yesterday-percent-run, 
+    .classification-summary,
+    .parameter-chart,
+    .dashboard-alerts {
+        background-color: white;
+    }
+
+    .well-list {
+        min-height: 570px;
+    }
+    .well-performance, .yesterday-percent-run {
+        min-height: 280px;
+    }
+    .classification-summary,
+    .parameter-chart {
+        min-height: 280px;
+    }
+    .dashboard-alerts{
+        height: 460px;
+    }
+    [class^="col-"], [class*=" col-"] {
+        border: none !important;
+        margin-bottom: 15px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+}

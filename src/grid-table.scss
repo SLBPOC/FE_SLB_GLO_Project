@@ -1,0 +1,382 @@
+// .tableContainer {
+//     padding:20px;
+//   .mat-mdc-table {
+//       background: rgba(19, 22, 41, 0.9) !important;
+//   }
+
+//   .tabletophead {
+//       background-color: rgba(19, 22, 41, 0.9);
+//       padding: 20px;
+//       display: flex;
+
+//       .lefthead {
+//           width: 35%;
+//           display: flex;
+//           align-items: center;
+
+//           h2 {
+//               margin: 0px;
+//               font-size: 18px;
+//               color: #fff;
+//           }
+//       }
+
+//       .righthead {
+//           width: 70%;
+//           display: flex;
+//           justify-content: end;
+
+//           mat-icon {
+//               color: #fff;
+//           }
+
+//           .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//               background-color: #000;
+//           }
+
+//           .prioritywrapper {
+//               ul {
+//                   padding-left: 0px;
+
+//                   li {
+//                       width: auto;
+//                       display: inline-block;
+//                       padding-right: 20px;
+//                       font-size: 10px !important;
+//                       color: #fff;
+
+//                       &.priority {
+//                           position: relative;
+//                           margin-left: 20px;
+
+//                           &:before {
+//                               position: absolute;
+//                               left: -21px;
+//                               content: "";
+//                               height: 12px;
+//                               width: 16px;
+//                               margin-bottom: 15px;
+//                               top: 4px;
+//                           }
+
+//                           &.high {
+//                               &:before {
+//                                   background-color: rgba(255, 107, 107, 1)
+//                               }
+//                           }
+
+//                           &.medium {
+//                               &:before {
+//                                   background-color:
+//                                       rgba(135, 234, 45, 1)
+//                               }
+//                           }
+
+//                           &.low {
+//                               &:before {
+//                                   background-color: rgba(255, 162, 32, 1);
+//                               }
+//                           }
+//                       }
+//                   }
+//               }
+//           }
+
+//           .searchBar {
+//               width: auto;
+//               display: flex;
+//               flex-direction: row;
+//               align-items: center;
+
+//               #searchQueryInput {
+//                   width: 330px;
+//                   height: 36px;
+//                   background: #080912;
+//                   outline: none;
+//                   border: none;
+//                   border-radius: 20px;
+//                   padding: 0 10px 0px 45px;
+//                   font-size: 1rem;
+//                   border-color: #8B90AD;
+//                   font-size: 16px;
+//                   color: #ADB1C7;
+//                   background-image: url('./assets/images/search-icon.svg');
+//                   background-repeat: no-repeat;
+//                   background-position: 12px 10px;
+//               }
+
+//               #searchQuerySubmit {
+//                   // width: 3.5rem;
+//                   // height: 2.8rem;
+//                   margin-left: -2.5rem;
+//                   background: none;
+//                   border: none;
+//                   outline: none;
+//               }
+
+//               .mat-mdc-form-field-icon-prefix>.mat-icon {
+//                   padding: 8px;
+//               }
+
+//               .mat-mdc-form-field-infix {
+//                   min-height: 36px;
+//                   padding: 8px 12px;
+//               }
+//           }
+
+//           .headIcons {
+//               display: flex;
+
+//               ul {
+//                   padding-left: 30px;
+
+//                   li {
+//                       display: inline-block;
+//                       padding-right: 20px;
+//                       list-style: none;
+//                   }
+//               }
+//           }
+//       }
+//   }
+
+//   .high-priorityline {
+//       width: 4px;
+//       height: 42px;
+//       background-color: rgb(227, 24, 24);
+//       border-radius: 8px;
+//       display: block;
+//   }
+
+//   .med-priorityline {
+//       width: 4px;
+//       height: 42px;
+//       background-color: rgba(135, 234, 45, 1);
+//       border-radius: 8px;
+//       display: block;
+//   }
+
+//   .low-priorityline {
+//       width: 4px;
+//       height: 42px;
+//       background-color: rgba(255, 162, 32, 1);
+//       border-radius: 8px;
+//       display: block;
+//   }
+
+//   .mat-mdc-paginator {
+//       background-color: rgba(19, 22, 41, 0.9);
+
+//       .mat-mdc-form-field {
+//           background-color: #000;
+//       }
+
+//       .mat-mdc-paginator-page-size-label{
+//         display: none;
+//       }
+//   }
+// }
+
+
+.tableContainer {
+    padding: 20px;
+    .mat-mdc-row{
+        td{
+            &:first-child{
+                width: 20px;
+            }
+        }
+    }
+  .mat-mdc-table {
+      background: rgba(19, 22, 41, 0.9) !important;
+  }
+
+  .mdc-data-table__cell{
+    padding:15px !important;
+    color:#ADB1C7 !important;
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+
+  .mdc-data-table__header-cell{
+    
+    padding:16px !important;
+    font-size: 14px;
+    line-height: 16px;
+    color:#EBECF2;
+    font-weight: 500;
+
+
+  }
+
+  .tabletophead {
+      background-color: rgba(19, 22, 41, 0.9);
+      padding: 20px;
+      display: flex;
+
+      .lefthead {
+          width: 35%;
+          display: flex;
+          align-items: center;
+
+          h2 {
+              margin: 0px;
+              font-size: 18px;
+              color: #fff;
+          }
+      }
+
+      .righthead {
+          width: 70%;
+          display: flex;
+          justify-content: end;
+
+          mat-icon {
+              color: #fff;
+          }
+
+          .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+              background-color: #000;
+          }
+
+          .prioritywrapper {
+              ul {
+                  padding-left: 0px;
+                  margin-top:20px;
+
+                  li {
+                      width: auto;
+                      display: inline-block;
+                      padding-right: 20px;
+                      font-size: 12px !important;
+                      color: #fff;
+
+                      &.priority {
+                          position: relative;
+                          margin-left: 20px;
+
+                          &:before {
+                              position: absolute;
+                              left: -21px;
+                              content: "";
+                              height: 12px;
+                              width: 16px;
+                              margin-bottom: 15px;
+                              top: 4px;
+                          }
+
+                          &.high {
+                              &:before {
+                                  background-color: rgba(255, 107, 107, 1)
+                              }
+                          }
+
+                          &.medium {
+                              &:before {
+                                  background-color:
+                                      rgba(135, 234, 45, 1)
+                              }
+                          }
+
+                          &.low {
+                              &:before {
+                                  background-color: rgba(255, 162, 32, 1);
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+
+          .searchBar {
+              width: auto;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              #searchQueryInput {
+                  width: 330px;
+                  height: 36px;
+                  background: #080912;
+                  outline: none;
+                  border: 1px solid #fff;
+                  border-radius: 20px;
+                  padding: 0 10px 0px 45px;
+                  font-size: 1rem;
+                  border-color: #8B90AD;
+                  font-size: 16px;
+                  color: #ADB1C7;
+                  background-image: url('./assets/images/search-icon.svg');
+                  background-repeat: no-repeat;
+                  background-position: 12px 10px;
+              }
+
+              #searchQuerySubmit {
+                  margin-left: -2.5rem;
+                  background: none;
+                  border: none;
+                  outline: none;
+              }
+
+              .mat-mdc-form-field-icon-prefix>.mat-icon {
+                  padding: 8px;
+              }
+
+              .mat-mdc-form-field-infix {
+                  min-height: 36px;
+                  padding: 8px 12px;
+              }
+          }
+
+          .headIcons {
+              display: flex;
+
+              ul {
+                  padding-left: 30px;
+
+                  li {
+                      display: inline-block;
+                      padding-right: 20px;
+                      list-style: none;
+                  }
+              }
+          }
+      }
+  }
+
+  .high-priorityline {
+      width: 4px;
+      height: 42px;
+      background-color:rgb(255, 107, 107);
+      border-radius: 8px;
+      display: block;
+  }
+
+  .med-priorityline {
+      width: 4px;
+      height: 42px;
+      background-color: rgba(135, 234, 45, 1);
+      border-radius: 8px;
+      display: block;
+  }
+
+  .low-priorityline {
+      width: 4px;
+      height: 42px;
+      background-color: rgba(255, 162, 32, 1);
+      border-radius: 8px;
+      display: block;
+  }
+
+  .mat-mdc-paginator {
+      background-color: rgba(19, 22, 41, 0.9);
+
+      .mat-mdc-form-field {
+          background-color: #000;
+      }
+
+      .mat-mdc-paginator-page-size-label{
+        display: none !important;
+      }
+  }
+}

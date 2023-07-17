@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h4 class="modal-title small pull-left">{{title}}</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- <ul *ngIf="list.length">
+      <li *ngFor="let item of list">{{item}}</li>
+    </ul> -->
+    <app-yesterday-cycle-bar-chart ></app-yesterday-cycle-bar-chart>
+    <!-- <app-bar-chart></app-bar-chart> -->
+  </div>
+  <!-- <div class="modal-footer small">
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+  </div> -->

@@ -1,0 +1,211 @@
+<mat-toolbar color="primary" class="example-toolbar">
+  <button mat-icon-button (click)="isExpanded = !isExpanded" class="menuButton"><mat-icon>menu</mat-icon></button>
+
+  <img _ngcontent-qeb-c370="" matbuttonicon="" (click)="left.open()" width="20" alt="avatar" class=""
+    src="./assets/app_icon.svg">
+  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/Delfi_White.svg">
+  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/divider.svg">
+  <mat-form-field>
+    <mat-select value="Domain" placeholder="Sucker Rod Pump">
+      <mat-option value="domain">Sucker Rod Pump</mat-option>
+      <mat-option value="exact">Gas Lift</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <img _ngcontent-qeb-c370="" matbuttonicon="" alt="avatar" class="" src="./assets/images/icon-home.svg">
+  <span class="flex-fill"></span>
+  <div class="rFloat rightSec">
+    <ul class="righttoolBar">
+      <li>
+        <div class="wrapper">
+          <div class="searchBar">
+            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+              <img matbuttonicon="" alt="" class="" src="./assets/images/close.svg">
+            </button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img matbuttonicon="" alt="" class="" src="./assets/images/workspace.svg">
+      </li>
+      <li>
+        <img matbuttonicon="" alt="" class="" src="./assets/images/icon-image.svg">
+      </li>
+      <li>
+        <img [matMenuTriggerFor]="menunotification" matbuttonicon="" alt="" class=""
+          src="./assets/images/bell-notification.svg">
+      </li>
+      <li>
+        <img [matMenuTriggerFor]="menuprofile" matbuttonicon="" alt="" class="" src="./assets/images/icon-profile.svg">
+      </li>
+      <li>
+        <img (click)="openFullscreen()" matbuttonicon="" alt="" class="" src="./assets/images/icon-expand.svg">
+      </li>
+    </ul>
+
+    <mat-menu #menunotification="matMenu" class="panelMenu notification-menu">
+      <ul>
+        <li>
+          <div class="notification-text">
+            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor tempi longe</a><br />
+            <div class="timestamp">Time</div>
+          </div>
+        </li>
+        <li>
+          <div class="notification-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor tempi longe<br />
+            <div class="timestamp">A minute ago</div>
+          </div>
+        </li>
+        <li>
+          <div class="notification-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor tempi longe<br />
+            <div class="timestamp">3 min ago</div>
+          </div>
+        </li>
+        <li>
+          <div class="notification-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor tempi longe<br />
+            <div class="timestamp">5 min ago</div>
+          </div>
+        </li>
+        <li>
+          <div class="notification-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor tempi longe<br />
+            <div class="timestamp">7 min ago</div>
+          </div>
+        </li>
+
+      </ul>
+      <div class="slb-view-more">
+        <button class="view-more">View All</button>
+      </div>
+    </mat-menu>
+
+    <!-- <mat-icon class="screen" (click)="closeFullscreen()">fullscreen_exit</mat-icon> -->
+    <mat-menu #menuprofile="matMenu" class="panelMenu profileMenu">
+      <button mat-menu-item>
+        <mat-icon>power_settings_new</mat-icon>
+        <span>Edit Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>edit</mat-icon>
+        <span>Log Out</span>
+      </button>
+    </mat-menu>
+
+  </div>
+
+</mat-toolbar>
+<mat-sidenav-container class="example-container d-flex">
+  <mat-sidenav #sidenav mode="side" class="example-sidenav open" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true"
+    id="navopen">
+    <mat-nav-list>
+      <mat-list-item class="navcontenttxt" routerLink="dashboard" routerLinkActive="active">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Dashboard</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent navcontenttxt">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Well List</span>
+
+        <!-- <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}"
+          *ngIf="isExpanded || isShowing">arrow_drop_down</mat-icon> -->
+      </mat-list-item>
+
+
+      <mat-list-item class="navcontenttxt" routerLink="alert-list">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Alerts</span>
+      </mat-list-item>
+      <mat-list-item class="navcontenttxt">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Events</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenuReport = !showSubmenuReport" class="parent navcontenttxt">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Reports</span>
+        <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenuReport}"
+          *ngIf="isExpanded || isShowing">arrow_drop_down</mat-icon>
+      </mat-list-item>
+      <div class="submenu" [ngClass]="{'expanded' : showSubmenuReport}" *ngIf="isShowing || isExpanded">
+        <a mat-list-item href="...">Submenu Item 1</a>
+        <a mat-list-item href="...">Submenu Item 2</a>
+      </div>
+      <mat-list-item class="navcontenttxt">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">Customer Admin</span>
+      </mat-list-item>
+      <mat-list-item class="navcontenttxt">
+        <span class="full-width menutxt" *ngIf="isExpanded || isShowing">SLB Admin</span>
+      </mat-list-item>
+    </mat-nav-list>
+    <button mat-icon-button (click)="sidenavToggle()"
+      class="menuButton menuIcon sidenav-menu"><mat-icon>keyboard_double_arrow_right</mat-icon></button>
+    <!-- <mat-icon (click)="sidenavToggle()" class="sidenav-menu">menu</mat-icon> -->
+    <div class="nav-bottom">
+      <div class="align-logo"><img alt="" class="" src="./assets/images/SLB_Logo_White.svg"></div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content [ngStyle]="{ 'width.em': containervWidth, 'margin-left.em': sidenavWidth}">
+    <div class="example-sidenav-content ">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+<mat-sidenav #left position="start" class="panel-sec">
+  <div class="app-panel">
+    <div class="panel-header">
+      <div>My App
+        <img matbuttonicon="" (click)="left.close()" alt="" class="imgclose" src="./assets/images/close.svg">
+      </div>
+      <div class="appList">
+        <ul>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 1</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 2</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 3</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 4</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 5</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 6</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 7</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 8</span>
+          </li>
+          <li>
+            <span><img alt="" class="" src="./assets/images/my-app.svg"></span>
+            <span>App 9</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <div class="align-logo"><a (click)="left.close()">
+          <span><mat-icon>keyboard_backspace</mat-icon></span>
+          <span> Go Back to Delfi
+            portal</span></a></div>
+    </div>
+  </div>
+</mat-sidenav>

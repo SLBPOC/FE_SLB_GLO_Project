@@ -1,0 +1,205 @@
+<div class="main-container">
+    <div class="container-title">
+        <span>
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.89746 12.919L2.86035 7.76407H19.9995V6.23543H2.86035L7.90039 1.08203L6.84131 0L0 7.00075L6.84082 14L7.89746 12.919Z"
+                    fill="#EBECF2" />
+            </svg>
+        </span>
+        <h1>Alert List</h1>
+    </div>
+    <div class="tableContainer">
+        <div class="tabletophead">
+            <div class="lefthead">
+                <h2>Alert List</h2>
+            </div>
+            <div class="righthead">
+                <div class="prioritywrapper">
+                    <ul>
+                        <li class="priority high">Over Pumping</li>
+                        <li class="priority medium">Optimal Pumping</li>
+                        <li class="priority low">Under Pumping</li>
+                    </ul>
+                </div>
+                <!-- <div class="searchbar">
+                <mat-form-field>
+                    <mat-icon matPrefix>search</mat-icon>
+                    <input matInput type="search" placeholder="Search" class="search-input">
+                </mat-form-field>
+                
+                </div> -->
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="">
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <img matbuttonicon="" alt="" class="" src="./assets/images/close-icon.svg"></button>
+                </div>
+                <div class="headIcons">
+                    <ul>
+                        <li><button mat-icon-button class="button-type-none"><svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.0527 2.93254C15.208 1.10189 12.6943 0 10.0005 0C4.48633 0 0 4.46343 0 9.95004C0 15.4362 4.48633 19.9001 10.0005 19.9001C15.5146 19.9001 20 15.4362 20 9.95004H18.5C18.5 14.6132 14.6875 18.4076 10.0005 18.4076C5.31348 18.4076 1.5 14.6132 1.5 9.95004C1.5 5.28645 5.31348 1.49251 10.0005 1.49251C12.29 1.49251 14.4268 2.42921 15.9951 3.98488L13 6.96503H18.2188H20V5.319V0L17.0527 2.93254Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li><button mat-icon-button [matMenuTriggerFor]="calenderFilter" class="button-type-none"><svg
+                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.76172 7.75195H4.26172V9.25195H5.76172V7.75195ZM9.10449 7.75684H7.60449V9.25684H9.10449V7.75684ZM10.9473 7.75684H12.4473V9.25684H10.9473V7.75684ZM15.7891 7.75684H14.2891V9.25684H15.7891V7.75684ZM14.8252 11.6973L13.6055 12.917L12.3867 11.6973L11.3252 12.7578L12.5459 13.9775L11.3252 15.1973L12.3867 16.2578L13.6055 15.0381L14.8252 16.2578L15.8867 15.1973L14.667 13.9775L15.8867 12.7578L14.8252 11.6973ZM6.39551 12.917L7.61523 11.6973L8.67676 12.7578L7.45605 13.9775L8.67676 15.1973L7.61523 16.2578L6.39551 15.0381L5.17676 16.2578L4.11523 15.1973L5.33496 13.9775L4.11523 12.7578L5.17676 11.6973L6.39551 12.917ZM15.2666 4.49707V3.00977H18.502V18.5H1.50098V3.00977H4.74023V4.49707H6.24023V3.00977H13.7666V4.49707H15.2666ZM13.7666 0V1.50977H6.24023V0H4.74023V1.50977H0V20H20V1.50977H15.2666V0H13.7666Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li><button mat-icon-button [matMenuTriggerFor]="SelectionFilter" class="button-type-none"><svg
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.77734 8.56563H16V7.36563H6.77734C6.50391 6.16953 5.43828 5.275 4.15859 5.275C2.87969 5.275 1.81328 6.16953 1.53984 7.36563H0V8.56563H1.53984C1.81328 9.76172 2.87969 10.6578 4.15859 10.6578C5.43828 10.6578 6.50391 9.76172 6.77734 8.56563ZM2.66719 7.96562C2.66719 7.14375 3.33594 6.475 4.15859 6.475C4.98047 6.475 5.65 7.14375 5.65 7.96562C5.65 8.78906 4.98047 9.45781 4.15859 9.45781C3.33594 9.45781 2.66719 8.78906 2.66719 7.96562ZM11.8086 5.38281C13.0883 5.38281 14.1539 4.48672 14.4273 3.29063H16V2.09063H14.4273C14.1539 0.894531 13.0883 0 11.8086 0C10.5297 0 9.46328 0.894531 9.18984 2.09063H0V3.29063H9.18984C9.46328 4.48672 10.5297 5.38281 11.8086 5.38281ZM10.3172 2.69062C10.3172 1.86875 10.9859 1.2 11.8086 1.2C12.6312 1.2 13.3 1.86875 13.3 2.69062C13.3 3.51406 12.6312 4.18281 11.8086 4.18281C10.9859 4.18281 10.3172 3.51406 10.3172 2.69062ZM8.275 16C9.55469 16 10.6203 15.1039 10.8938 13.9078H16V12.7078H10.8938C10.6203 11.5117 9.55469 10.6172 8.275 10.6172C6.99609 10.6172 5.92969 11.5117 5.65625 12.7078H0V13.9078H5.65625C5.92969 15.1039 6.99609 16 8.275 16ZM6.78359 13.3078C6.78359 12.4859 7.45312 11.8172 8.275 11.8172C9.09687 11.8172 9.76641 12.4859 9.76641 13.3078C9.76641 14.1312 9.09687 14.8 8.275 14.8C7.45312 14.8 6.78359 14.1312 6.78359 13.3078Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- calender filter start-->
+        <mat-menu #calenderFilter="matMenu" class="filter-container">
+            <div class="align-center">
+                <div class="calender-alrt-filter">
+                    <div class="calender-alrt-filter-header">
+                        <div class="calender-alrt-filter-title">Select</div>
+                        <!-- <button mat-icon-button [matMenuTriggerFor]="calenderFilter" class="calender-alrt-filter-close button-type-none"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16 1.13594L14.8664 0L8 6.88125L1.13359 0L0 1.13594L6.86641 8.01719L0.034375 14.8641L1.16797 16L8 9.15312L14.832 16L15.9656 14.8641L9.13359 8.01719L16 1.13594Z" fill="#CCCFDE"/>
+                         </svg>
+                     </button> -->
+                    </div>
+                    <div class="calender-alrt-filter-section-btn-grp">
+                        <button mat-flat-button class="select-btn">1 Day</button>
+                        <button mat-flat-button class="select-btn">1 Week</button>
+                        <button mat-flat-button class="select-btn">1 Month</button>
+                    </div>
+                    <div class="calender-alrt-filter-section-date-range">
+                        <div class="calender-alrt-filter-date-range-title">Select Data Range</div>
+                        <div class="calender-alrt-filter-section-colender">
+                            <mat-calendar [selected]="selectedRangeValue" (click)="$event.stopPropagation()"
+                                (selectedChange)="selectedChange($event)">
+                            </mat-calendar>
+                        </div>
+                    </div>
+                    <div class="calender-alrt-filter-action-btn-grp">
+                        <button mat-flat-button class="action-btn">Reset</button>
+                        <button mat-flat-button class="action-btn active marginL20">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </mat-menu>
+        <!-- calender filter end -->
+        <!-- select filter start-->
+        <!-- <button mat-icon-button [matMenuTriggerFor]="SelectionFilter" class="calender-alrt-filter-close button-type-none"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 1.13594L14.8664 0L8 6.88125L1.13359 0L0 1.13594L6.86641 8.01719L0.034375 14.8641L1.16797 16L8 9.15312L14.832 16L15.9656 14.8641L9.13359 8.01719L16 1.13594Z" fill="#CCCFDE"/>
+            </svg>
+        </button> -->
+        <mat-menu #SelectionFilter="matMenu" class="filter-container">
+            <div class="align-center">
+                <div class="select-filter">
+                    <div class="select-filter-header">
+                        <div class="select-filter-title">Filter by</div>
+                        <!-- <button mat-icon-button [matMenuTriggerFor]="SelectionFilter" class="calender-alrt-filter-close button-type-none"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16 1.13594L14.8664 0L8 6.88125L1.13359 0L0 1.13594L6.86641 8.01719L0.034375 14.8641L1.16797 16L8 9.15312L14.832 16L15.9656 14.8641L9.13359 8.01719L16 1.13594Z" fill="#CCCFDE"/>
+                         </svg>
+                     </button> -->
+                    </div>
+                    <div class="select-filter-section" (click)="$event.stopPropagation()">
+                        <div class="select-lbl">Alert Type</div>
+                        <mat-form-field>
+                            <mat-select placeholder="Select Alert Type">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="select-filter-section" (click)="$event.stopPropagation()">
+                        <div class="select-lbl">Status</div>
+                        <mat-form-field>
+                            <mat-select placeholder="Select Status">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <!-- <div class="select-filter-section" (click)="$event.stopPropagation()">
+                     <div class="select-lbl">Select your toppings:</div>
+                     <section class="checkbox-section" [formGroup]="toppings">
+                         <p><mat-checkbox formControlName="EffectiveRunTime">Effective Run Time (%)</mat-checkbox></p>
+                         <p><mat-checkbox formControlName="CyclesToday">Cycles Today (dimensionless)</mat-checkbox></p>
+                         <p><mat-checkbox formControlName="StructuralLoad">Structural Load (%)</mat-checkbox></p>
+                         <p><mat-checkbox formControlName="MinMaxLoad">Min/Max Load (lbs)</mat-checkbox></p>
+                         <p><mat-checkbox formControlName="GearboxLoad">Gearbox Load (%)</mat-checkbox></p>
+                         <p><mat-checkbox formControlName="RodStress">Rod Stress (%)</mat-checkbox></p>
+                     </section>
+                 </div> -->
+
+                    <div class="select-filter-action-btn">
+                        <button mat-flat-button class="action-btn active">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </mat-menu>
+        <!-- select filter end -->
+
+        <table mat-table [dataSource]="dataSource">
+            <!-- Priority Status Column -->
+            <ng-container matColumnDef="stat">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element">
+                    <!-- <span class="high-priorityline">{{element?.status}}</span>  -->
+                    <span
+                        [ngClass]="element.alertLevel === 'High' ? 'high-priorityline' : element.alertLevel === 'Medium' ? 'med-priorityline': 'low-priorityline'"></span>
+                </td>
+            </ng-container>
+            <!-- Wells Name -->
+            <ng-container matColumnDef="wellName">
+                <th mat-header-cell *matHeaderCellDef> Well Name </th>
+                <td mat-cell *matCellDef="let element" id="well_name"> {{element.wellName}} </td>
+            </ng-container>
+            <!--Alert Level -->
+            <ng-container matColumnDef="alertLevel">
+                <th mat-header-cell *matHeaderCellDef> Alert Level </th>
+                <td mat-cell *matCellDef="let element"> {{element.alertLevel}} </td>
+            </ng-container>
+            <!-- Time and date -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef> Time and Date </th>
+                <td mat-cell *matCellDef="let element"> {{element.date | date:'yyyy-MM-dd HH:MM:ss'}} </td>
+            </ng-container>
+            <!-- Description -->
+            <ng-container matColumnDef="desc">
+                <th mat-header-cell *matHeaderCellDef> Description </th>
+                <td mat-cell *matCellDef="let element"> {{element.desc}} </td>
+            </ng-container>
+            <!-- Status -->
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef> Status </th>
+                <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+            </ng-container>
+            <!-- Action -->
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button class="alert-action-btn">{{element.action}}</button>
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
+            aria-label="Select page of periodic elements">
+        </mat-paginator>
+    </div>
+</div>

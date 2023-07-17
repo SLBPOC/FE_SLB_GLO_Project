@@ -1,0 +1,17 @@
+<h5 class="card-title">Well performance</h5>
+<h6 class="card-subtitle mb-2 text-muted">
+  Producing wells
+  <span>
+    <button class="flRight" (click)="loadFullScreen()">
+      <i class="bi bi-arrows-fullscreen"></i></button
+  ></span>
+</h6>
+<div class="card-text">
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    [oneToOne]="true"
+    (chartInstance)="logChartInstance($event)"
+    style="width: 100%; min-height: 20px; display: block"
+  ></highcharts-chart>
+</div>

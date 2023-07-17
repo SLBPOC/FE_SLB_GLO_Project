@@ -1,0 +1,76 @@
+<div class="header border">
+  <h5 class="text-left title p-2">
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-left"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+        />
+      </svg>
+    </span>
+    Dashboard
+  </h5>
+</div>
+<div class="container-fluid pt-2">
+  <div class="row">
+    <div
+      class="col-md-2 mb-0 border"
+      style="padding-left: 10px; padding-right: 0px"
+    >
+      <div class="well-list shadow-sm p-2">
+        <h6>Well list</h6>
+        <app-well-list></app-well-list>
+      </div>
+    </div>
+    <div class="col-md-10 mb-0 border">
+      <div class="row">
+        <div class="col-md-3 mb-0 border">
+          <div class="well-performance shadow-sm p-2">
+            <app-well-performance></app-well-performance>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 p-0 border">
+          <div class="yesterday-cycle-count shadow-sm">
+            <app-yesterday-cycle-count></app-yesterday-cycle-count>
+          </div>
+        </div>
+        <div class="col-md-5 mb-0 border">
+          <div class="yesterday-percent-run shadow-sm p-2">
+            <app-yesterday-percent-run></app-yesterday-percent-run>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md-6 border">
+          <div class="classification-summary shadow-sm p-2">
+            <app-classification-summary></app-classification-summary>
+          </div>
+        </div>
+        <div class="col-md-6 border" style="padding-left: 0px">
+          <div class="parameter-chart shadow-sm p-2">
+            <app-parameter-chart></app-parameter-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mb-0 border">
+      <div class="row">
+        <div class="col-md-12 mb-0 border">
+          <div class="dashboard-alerts shadow-sm p-1">
+            <app-dashboard-alerts></app-dashboard-alerts>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

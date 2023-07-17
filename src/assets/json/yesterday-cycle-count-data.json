@@ -1,0 +1,58 @@
+[
+    {
+       "id":"1",
+       "name":"Group 1 (0-5)",
+       "y":20.0,
+       "sliced":false,
+       "selected":false,
+       "color":"purple",
+       "events":{
+          
+       }
+    },
+    {
+       "id":"2",
+       "name":"Group 2 (6-10)",
+       "y":20.0,
+       "sliced":false,
+       "selected":false,
+       "color":"lightgreen",
+       "events":{
+          
+       }
+    },
+    {
+       "id":"3",
+       "name":"Group 3 (11-20)",
+       "y":20.0,
+       "sliced":false,
+       "selected":false,
+       "color":"darkblue",
+       "events":{
+          
+       }
+    },
+    {
+       "id":"4",
+       "name":"Group 4 (>20)",
+       "y":20.0,
+       "sliced":false,
+       "selected":false,
+       "color":"pink",
+       "events":{
+          
+       }
+    },
+    {
+       "id":"5",
+       "name":"N.A",
+       "y":20.0,
+       "sliced":false,
+       "selected":false,
+       "color":"skyblue",
+       "events":{
+          
+       }
+    }
+ ]
+

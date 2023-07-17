@@ -1,0 +1,11 @@
+<p class="text-left title">Parameter Chart </p>
+<!-- <mat-form-field>
+    <mat-select placeholder="variables" [formControl]="variables" [(value)]="selectedVariables" multiple (selectionChange)="onChange($event)">
+      <mat-option *ngFor="let variable of variableList" [value]="variable">{{variable}}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+<highcharts-chart
+      [Highcharts] = "Highcharts"
+      [options] = "ChartOptions" [oneToOne]="true" [(update)]="updateFromInput" > 
+    </highcharts-chart>
+   

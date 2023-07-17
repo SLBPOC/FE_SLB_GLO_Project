@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-12 only-search">
+        <mat-form-field>
+            <input matInput placeholder="Search" type="text" (keyup)="onSearchChange()" [(ngModel)]="searchText" />
+            <span matIconPrefix><mat-icon>search</mat-icon></span>
+            <button *ngIf="searchText || currentSelectedSavedSearch" matSuffix mat-icon-button aria-label="Clear" (click)="onClear()">
+                <mat-icon>close</mat-icon>
+            </button>
+            <button *ngIf="(searchText && currentSelectedSavedSearch ==null) || isSaveEnabled" matSuffix mat-icon-button aria-label="Save" (click)="openSaveDialog()">
+                <mat-icon>save</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <div class="col-12" *ngIf="hasSavedList">
+        <mat-form-field>
+            <mat-label>Saved Search</mat-label>
+            <mat-select (selectionChange)="onSelect($event)" [value]="currentSelectedSavedSearch">
+                <mat-option *ngFor="let item of (treeViewService.savedStateEmit) | async" [value]="item">{{item.Name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<mat-radio-group aria-label="Select an option" [(ngModel)]="option" (ngModelChange)="onSearchChange()">
+    <div class="row">
+        <div class="col-12`">
+            <div class="row">
+                <div class="col-6">
+                    <mat-radio-button value="fields">Fields</mat-radio-button>
+                </div>
+                <div class="col-6">
+                    <mat-radio-button value="battery">Battery</mat-radio-button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+
+                <div class="col-6">
+                    <mat-radio-button value="pads">Pads</mat-radio-button>
+                </div>
+                <div class="col-6">
+                    <mat-radio-button value="wells">Wells</mat-radio-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-radio-group>
+
+<div class="col-12">
+    <hr />
+</div>
